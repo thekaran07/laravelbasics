@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'ProjectsController@index');
 Route::resource('projects', 'ProjectsController');		
 /*Route::get('/projects', 'ProjectsController@index'); //fetch me all projects
 Route::get('/projects/create', 'ProjectsController@create'); //fetch me a form to create project
